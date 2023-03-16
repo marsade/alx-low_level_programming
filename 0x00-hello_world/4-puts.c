@@ -1,9 +1,10 @@
 #include<stdio.h>
-/* This function prints a string with an escape character*/
+/* 
+ * main - A function that prints with the put function
+ * */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	getchar();
 	return (0);
 
 }
