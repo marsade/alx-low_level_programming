@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main- The function prints the alphabet
- * in lowercase, and then in uppercase, 
+ * in lowercase, and then in uppercase,
  * followed by a new line.
  *
  * Return: Always 0 (Success)
@@ -19,5 +19,5 @@ int main(void)
 		putchar(letter);
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
