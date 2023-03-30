@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* strcat - appends the src string to the dest string
+* _strcat - appends the src string to the dest string
 * overwriting the null byte at the end ans then adds it
 * @dest: first string
 * @src: string to be appended
