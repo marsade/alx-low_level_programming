@@ -8,7 +8,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int res = 0, len = 0, i, j, lena, k, l;
-	
+
 	k = 0;
 	while (s[k] != ' ')
 	{
