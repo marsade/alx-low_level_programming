@@ -1,2 +1,2 @@
 #!/bin/sh
-ar -rcs liball.a *o
+ar -rcs liball.a *.o
