@@ -5,7 +5,7 @@
 /**
 * num_check - check if the string is a digit
 * @strn: string to be checked
-* Return 0
+* Return: 0
 */
 int num_check(char *strn)
 {
