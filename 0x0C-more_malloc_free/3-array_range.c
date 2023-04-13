@@ -9,7 +9,7 @@
 int *array_range(int min, int max)
 {
 	int *arr;
-	int i = min, j = 0, sum;
+	int i, sum;
 
 	sum = max - min + 1;
 	arr = malloc(sum * sizeof(int));
@@ -17,9 +17,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	if (min > max)
 		return (NULL);
-	while (i <= max)
-	{
-		arr[j++] = i++;
-	}
+	for (i = 0; min <= max; i++)
+		arr[i] = min++;
 	return (arr);
 }
