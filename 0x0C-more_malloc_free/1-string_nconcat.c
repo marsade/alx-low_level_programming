@@ -26,35 +26,23 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (new_str == NULL)
 		return (NULL);
 	i = j = 0;
-	if (n >= k)
+	while (s1[i] != '\0')
 	{
-		while (s1[i] != '\0')
-		{
-			new_str[i] = s1[i];
-			i++;
-		}
+		new_str[i] = s1[i];
+		i++;
+	}
+	if (n >= k)
 		while (s2[j] != '\0')
 		{
 			new_str[i] = s2[j];
-			i++;
-			j++;
+			i++, j++;
 		}
-
-	}
 	else
-	{	
-		while (s1[i] != '\0')
-		{
-			new_str[i] = s1[i];
-			i++;
-		}
-		while (j != n)
+		while (j <= n)
 		{
 			new_str[i] = s2[j];
-			i++;
-			j++;
+			i++, j++;
 		}
-	}
 	new_str[i] = '\0';
 	return (new_str);
 }
