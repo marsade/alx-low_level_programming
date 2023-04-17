@@ -8,14 +8,6 @@
 */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	int i = 0;
-
-	while (name[i] != '\0')
-	{
-		p->name[i] = name[i];
-		i++;
-	}
-	p->name[i] = '\0';
 	d->name = name;
 	d->age = age;
 	d->owner = owner;
