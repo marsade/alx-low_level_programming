@@ -1,5 +1,9 @@
 # C - Singly linked lists
 
+## General
+- When and why using linked lists vs arrays
+- How to build and use linked lists
+
 ## Files
 - 0-print_list.c
 - 1-list_len.c
