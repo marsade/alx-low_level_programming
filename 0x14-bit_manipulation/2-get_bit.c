@@ -10,7 +10,7 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int set;
 
-	if (!n)
+	if (!n || index < 0)
 		return (-1);
 	set = (n >> index) & 1;
 	return (set);
