@@ -38,14 +38,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			return (1);
 		}
 	}
-	if (ht->array[hash_index] == NULL)
-		ht->array[hash_index] = new_node;
-	else
-	{
-		current_node = ht->array[hash_index];
-		while (current_node->next != NULL)
-			current_node = current_node->next;
-		current_node->next = new_node;
-	}
+	new_node->next = ht->array[hash_index];
+	ht->array[hash_index] = new_node;
 	return (1);
 }
